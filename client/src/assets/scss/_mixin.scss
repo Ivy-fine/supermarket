@@ -1,0 +1,38 @@
+@mixin wh($width, $height) {
+    width: $width;
+    height: $height;
+    display: block;
+}
+
+@mixin borderBottomSolid($width, $color) {
+    border-bottom: $width solid $color;
+}
+
+@mixin circleBorder {
+    border-radius: 100%;
+}
+
+@mixin roundCorner($px) {
+    border-radius: $px;
+}
+@mixin baseFontStyle {
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+}
+@mixin baseTitleFontStyle {
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+}
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexAJ($align, $justify) {
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
